@@ -5,11 +5,12 @@ import (
 	"os"
 	"strings"
 
+	"golang.org/x/xerrors"
+
 	"github.com/goccy/go-yaml/ast"
 	"github.com/goccy/go-yaml/internal/errors"
 	"github.com/goccy/go-yaml/lexer"
 	"github.com/goccy/go-yaml/token"
-	"golang.org/x/xerrors"
 )
 
 type parser struct{}
@@ -163,6 +164,11 @@ func (p *parser) createMapValueNode(ctx *context, key ast.MapKeyNode, colonToken
 			comment.SetPath(ctx.withChild(key.GetToken().Value).path)
 		}
 		tk = ctx.currentToken()
+		if tk == nil {
+			nullToken := p.createNullToken(colonToken)
+			ctx.insertToken(ctx.idx, nullToken)
+			return ast.Null(nullToken), nil
+		}
 	}
 	if tk.Position.Column == key.GetToken().Position.Column && tk.Type == token.StringType {
 		// in this case,
