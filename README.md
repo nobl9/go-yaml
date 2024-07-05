@@ -1,3 +1,15 @@
+# FORK DISCLAIMER
+
+Since the upstream [goccy/go-yaml](https://github.com/goccy/go-yaml)
+seems to be not actively maintained anymore, we are going forward with this fork.
+
+If you're adding changes, please list them below for a comprehensive list of differences between the fork and upstream.
+Provide concise description of the change and why was it introduced.
+
+- https://github.com/nobl9/go-yaml/pull/1 Expose syntax and type errors, since they were unexported and there was no direct way to access `ast.Node` details at which the errors occurred.
+- https://github.com/nobl9/go-yaml/pull/2 Root YAML path in the form of `$` query was not handled properly, such query now returns the root `ast.Node`.
+- https://github.com/nobl9/go-yaml/pull/3 Some double quoted JSON string literals were not being tokenized correctly, the behaviour was fixed.
+
 # YAML support for the Go language
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/goccy/go-yaml)](https://pkg.go.dev/github.com/goccy/go-yaml)
