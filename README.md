@@ -9,6 +9,7 @@ Provide concise description of the change and why was it introduced.
 - https://github.com/nobl9/go-yaml/pull/1 Expose syntax and type errors, since they were unexported and there was no direct way to access `ast.Node` details at which the errors occurred.
 - https://github.com/nobl9/go-yaml/pull/2 Root YAML path in the form of `$` query was not handled properly, such query now returns the root `ast.Node`.
 - https://github.com/nobl9/go-yaml/pull/3 Some double quoted JSON string literals were not being tokenized correctly, the behaviour was fixed.
+- https://github.com/nobl9/go-yaml/pull/5 Updated `go.mod` module name to `goccy/go-yaml --> nobl9/go-yaml`. This was neccessary to remove `repalce` clauses from dependant modules which blocked `go install` from running properly (error: _"The go.mod file for the module providing named packages contains one or more replace directives"_).
 
 # YAML support for the Go language
 
