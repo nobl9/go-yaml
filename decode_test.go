@@ -16,10 +16,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/parser"
+	"github.com/nobl9/go-yaml"
+	"github.com/nobl9/go-yaml/ast"
+	"github.com/nobl9/go-yaml/internal/errors"
+	"github.com/nobl9/go-yaml/parser"
 )
 
 type Child struct {

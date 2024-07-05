@@ -1,9 +1,9 @@
 package yaml
 
 import (
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/token"
+	"github.com/nobl9/go-yaml/ast"
+	"github.com/nobl9/go-yaml/internal/errors"
+	"github.com/nobl9/go-yaml/token"
 	"golang.org/x/xerrors"
 )
 

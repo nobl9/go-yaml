@@ -8,8 +8,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/xerrors"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
+	"github.com/nobl9/go-yaml"
+	"github.com/nobl9/go-yaml/ast"
 )
 
 func TestMarshal(t *testing.T) {

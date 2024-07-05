@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
+	"github.com/nobl9/go-yaml/ast"
+	"github.com/nobl9/go-yaml/internal/errors"
 	"golang.org/x/xerrors"
 )
 

@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/goccy/go-yaml/token"
+	"github.com/nobl9/go-yaml/token"
 )
 
 // IndentState state for indent

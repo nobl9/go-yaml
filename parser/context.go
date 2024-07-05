@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/goccy/go-yaml/token"
+	"github.com/nobl9/go-yaml/token"
 )
 
 // context context at parsing
@@ -179,7 +179,7 @@ func newContext(tokens token.Tokens, mode Mode) *context {
 				continue
 			}
 			// keep prev/next reference between tokens containing comments
-			// https://github.com/goccy/go-yaml/issues/254
+			// https://github.com/nobl9/go-yaml/issues/254
 			filteredTokens = append(filteredTokens, tk)
 		}
 	}

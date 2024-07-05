@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/goccy/go-yaml/printer"
-	"github.com/goccy/go-yaml/token"
+	"github.com/nobl9/go-yaml/printer"
+	"github.com/nobl9/go-yaml/token"
 	"golang.org/x/xerrors"
 )
 
