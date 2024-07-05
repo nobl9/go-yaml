@@ -17,10 +17,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/parser"
-	"github.com/goccy/go-yaml/token"
+	"github.com/nobl9/go-yaml/ast"
+	"github.com/nobl9/go-yaml/internal/errors"
+	"github.com/nobl9/go-yaml/parser"
+	"github.com/nobl9/go-yaml/token"
 )
 
 // Decoder reads and decodes YAML values from an input stream.

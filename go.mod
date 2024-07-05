@@ -1,4 +1,4 @@
-module github.com/goccy/go-yaml
+module github.com/nobl9/go-yaml
 
 go 1.19
 
